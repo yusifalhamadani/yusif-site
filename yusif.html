@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yusif — Profile</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --surface: #111111;
+    --surface2: #181818;
+    --border: rgba(255,255,255,0.07);
+    --text: #f0ede8;
+    --muted: #6b6966;
+    --accent: #c8ff5a;
+    --accent2: #ff9b5a;
+    --accent3: #5ac8ff;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+  }
+
+  nav {
+    position: fixed;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--border);
+    background: rgba(10,10,10,0.9);
+  }
+
+  .nav-logo {
+    color: var(--accent);
+    font-weight: bold;
+  }
+
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .hero-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 5rem;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+
+  section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .skills-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .skill-card {
+    background: var(--surface);
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+  }
+
+  .skill-tag {
+    color: var(--accent);
+    margin-top: 0.5rem;
+    display: inline-block;
+  }
+
+  .quote-box {
+    text-align: center;
+    color: var(--muted);
+  }
+
+  .quote-author {
+    margin-top: 10px;
+    color: var(--accent);
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+  }
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="nav-logo">YUS</div>
+</nav>
+
+<div class="hero">
+  <h1 class="hero-name">Yusif</h1>
+
+  <div class="hero-stats">
+    <div>
+      <div>101</div>
+      <div>WPM</div>
+    </div>
+    <div>
+      <div>20K+</div>
+      <div>GD level objects</div>
+    </div>
+    <div>
+      <div>71–80%</div>
+      <div>Flamewall</div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>Geometry Dash</h3>
+      <p>71–80% completion on Flamewall with frame-perfect timing.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Level design</h3>
+      <p>Building End of Time — over 20,000 objects.</p>
+      <span class="skill-tag">20,000+ objects</span>
+    </div>
+
+    <div class="skill-card">
+      <h3>PC hardware</h3>
+      <p>Diagnosed and fixed multiple hardware issues independently.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Novel writing</h3>
+      <p>Writing The Ship trilogy with dark comedy style.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">From the man himself</h2>
+
+  <div class="quote-box">
+    <p>"hello hey hiya howdy greetings salutations ok im bored"</p>
+    <div class="quote-author">— Yusif</div>
+  </div>
+</section>
+
+<footer>
+  Yusif — Sydney, Australia
+</footer>
+
+</body>
+</html>
